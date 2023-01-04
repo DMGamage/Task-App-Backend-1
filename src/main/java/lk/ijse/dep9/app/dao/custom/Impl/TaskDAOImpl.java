@@ -3,10 +3,14 @@ package lk.ijse.dep9.app.dao.custom.Impl;
 import lk.ijse.dep9.app.dao.custom.TaskDAO;
 import lk.ijse.dep9.app.entity.Task;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;
 
 public class TaskDAOImpl implements TaskDAO {
+    public TaskDAOImpl(Connection connection) {
+    }
+
     @Override
     public Task save(Task task) {
         return null;

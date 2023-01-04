@@ -3,10 +3,14 @@ package lk.ijse.dep9.app.dao.custom.Impl;
 import lk.ijse.dep9.app.dao.custom.ProjectDAO;
 import lk.ijse.dep9.app.entity.Project;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;
 
 public class ProjectDAOImpl implements ProjectDAO {
+    public ProjectDAOImpl(Connection connection) {
+    }
+
     @Override
     public Project save(Project project) {
         return null;

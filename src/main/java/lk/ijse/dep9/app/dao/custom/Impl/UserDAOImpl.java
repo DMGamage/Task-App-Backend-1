@@ -3,10 +3,15 @@ package lk.ijse.dep9.app.dao.custom.Impl;
 import lk.ijse.dep9.app.dao.custom.UserDAO;
 import lk.ijse.dep9.app.entity.User;
 
+import java.sql.Connection;
 import java.util.List;
 import java.util.Optional;
 
 public class UserDAOImpl implements UserDAO {
+    public UserDAOImpl(Connection connection) {
+
+    }
+
     @Override
     public User save(User user) {
         return null;
