@@ -5,6 +5,9 @@ import lk.ijse.dep9.app.entity.Project;
 import lk.ijse.dep9.app.entity.Task;
 
 import javax.sql.rowset.CachedRowSet;
+import java.util.List;
 
 public interface TaskDAO extends CrudDAO<Task,Integer > {
+    List<Task> findAllTasksByProjectId(Integer projectId);
+
 }

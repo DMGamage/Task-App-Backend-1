@@ -18,11 +18,19 @@ public class Project implements SuperEntity {
     private int id;
 
     private String name;
-    private User user;
+    private String username;
 
 
     public Project(String name, User user) {
         this.name = name;
-        this.user = user;
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
